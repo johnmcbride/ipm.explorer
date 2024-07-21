@@ -1,0 +1,156 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  body {
+    font-family: 'Segoe WPC','Segoe UI',sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  .packagemanager {
+    padding: 0%;
+    margin: 0%;
+  }
+  .ptitle {
+    font-weight: bold;
+  }
+
+  .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  .details
+  {
+    margin: 2px 0 0 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 2px;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .description {
+    font-size: 13px;
+  }
+  .package {
+    margin:0px 0px 5px 0px;
+    display: flex;
+    padding:0 0 0 16px;
+  }
+  .package:hover
+  {
+    background-color: #4d4c4c;
+  }
+  .repo-button {
+    line-height: 18px;
+    padding: 2px 14px;
+  }
+  .packageimage {
+    padding-right: 14px;
+    width: 42px;
+    /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); */
+    /* filter: brightness(0) saturate(100%) invert(73%) sepia(22%) saturate(0%) hue-rotate(271deg) brightness(98%) contrast(91%); */
+    filter: brightness(0) saturate(100%) invert(70%) sepia(97%) saturate(312%) hue-rotate(131deg) brightness(87%) contrast(88%);
+  }
+  .repo {
+    padding:5px 0px 0px 0px;
+    width: 20px;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /* color: rgb(70 70 70); */
+  }
+  .detailtitle
+  {
+    font-size: 26px;
+    color: #cccccc;
+  }
+  .detaildesc
+  {
+    font-size: 14px;
+    color: #cccccc;
+  }
+  .extensiondets {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    overflow: hidden;
+  }
+  .extensiondets > .header {
+    display: flex;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 20px 20px 14px;
+  }
+  .extensiondets > .header > .icon-container {
+    position: relative;
+  }
+  .extensiondets > .header > .icon-container>img {
+    position: relative;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(97%) saturate(312%) hue-rotate(131deg) brightness(87%) contrast(88%);
+  }
+  
+  .extensiondets > .header > .details {
+    overflow: hidden;
+    padding-left: 20px;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  
+  .extensiondets > .header > .details > .title {
+    /* flex: 0; */
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+    align-items: center;
+    /* display: flex; */
+  }
+  .extensiondets > .header > .details > .description {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .extensiondets > .header > .details > .subtitle {
+    height: 20px;
+    line-height: 20px;
+    padding-top: 6px;
+    white-space: nowrap;
+  }
+  .extensiondets > .body {
+    flex: 1;
+    overflow: hidden;
+  }
+  .actiondetails
+  {
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .actiondetails>.logo
+  {
+    color: #026ec1
+  }
+  .selectedext
+  {
+    background-color: #4d4c4c;
+  }
+  .custombutton
+  {
+  line-height: 18px;
+  /* padding: 2px 14px; */
+  }
