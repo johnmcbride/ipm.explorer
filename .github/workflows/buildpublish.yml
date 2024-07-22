@@ -3,9 +3,17 @@ on: push
 jobs:
     build_extension:
         name: Build Extension
-        timeout-minutes: 10
         runs-on: linux
-    publish_extension:
-        name: Publish Extension
-        timeout-minutes: 10
-        runs-on: linux
+        steps:
+            - name: "Checking out repo"
+              uses: actions/checkout@v4
+            - name: "Using node.js"
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.11.1'
+            - name: "Install dependencies"
+              run: npm ci
+    # publish_extension:
+    #     name: Publish Extension
+    #     timeout-minutes: 10
+    #     runs-on: ubuntu-latest
