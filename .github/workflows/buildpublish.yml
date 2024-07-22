@@ -1,0 +1,11 @@
+name: "Build and publish IPM Extension"
+on: push
+jobs:
+    build_extension:
+        name: Build Extension
+        timeout-minutes: 10
+        runs-on: linux
+    publish_extension:
+        name: Publish Extension
+        timeout-minutes: 10
+        runs-on: linux
