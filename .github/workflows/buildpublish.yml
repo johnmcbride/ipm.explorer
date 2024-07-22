@@ -3,7 +3,7 @@ on: push
 jobs:
     build_extension:
         name: Build Extension
-        runs-on: linux
+        runs-on: ubuntu-latest
         steps:
             - name: "Checking out repo"
               uses: actions/checkout@v4
