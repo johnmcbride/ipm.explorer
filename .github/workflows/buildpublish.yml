@@ -13,9 +13,10 @@ jobs:
                 node-version: '20.11.1'
             - name: "Install dependencies"
               run: npm ci
+            - name: "Install VSCE for extension publishing"
+              run: npm install -g @vscode/vsce
             - name: "Compiling extension"
               run: npm run pretest
-    # publish_extension:
-    #     name: Publish Extension
-    #     timeout-minutes: 10
-    #     runs-on: ubuntu-latest
+            - name: "Packaging with VSCE"
+              run: vsce package
+            # - name: "Packaging VS Code Extension"
