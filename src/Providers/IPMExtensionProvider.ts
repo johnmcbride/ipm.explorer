@@ -31,7 +31,7 @@ export class IPMExtensionProvider implements vscode.WebviewViewProvider
 		if ( configs!.length === undefined)
 		{
 			//Show info message to the user
-			vscode.window.showInformationMessage("You do not have any IPM repositories configured. Please open settings and configure a IPM respository")
+			vscode.window.showInformationMessage("You do not have any IPM repositories configured. Please open settings and configure a IPM respository");
 		}
 		else
 		{
