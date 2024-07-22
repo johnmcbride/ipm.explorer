@@ -31,7 +31,7 @@ export class IPMExtensionProvider implements vscode.WebviewViewProvider
 		if ( configs!.length === undefined)
 		{
 			//Show info message to the user
-			vscode.window.showInformationMessage("You do not have any IPM repositories configured. Please open settings and configure a IPM respository")
+			vscode.window.showInformationMessage("You do not have any IPM repositories configured. Please open settings and configure a IPM respository");
 		}
 		else
 		{
@@ -162,7 +162,7 @@ export class IPMExtensionProvider implements vscode.WebviewViewProvider
 					let p:IPMPackage = JSON.parse(Base64.decode(message.message));
 					//check if we already have a webpanel opened/defined. If we do then change
 					//the content, if we don't create a new one and add the content.
-					if ( this._ipmInfoWebViewPanel == undefined)
+					if ( this._ipmInfoWebViewPanel === undefined)
 					{
 						//we don't have a webpanel defined so let's create one
 						//set the name to be the package name, enable scripts and

@@ -1,0 +1,22 @@
+name: "Build and publish IPM Extension"
+on: push
+jobs:
+    build_extension:
+        name: Build Extension
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Checking out repo"
+              uses: actions/checkout@v4
+            - name: "Using node.js"
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.11.1'
+            - name: "Install dependencies"
+              run: npm ci
+            - name: "Install VSCE for extension publishing"
+              run: npm install -g @vscode/vsce
+            - name: "Compiling extension"
+              run: npm run pretest
+            - name: "Packaging with VSCE"
+              run: vsce package
+            # - name: "Packaging VS Code Extension"
