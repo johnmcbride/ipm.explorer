@@ -1,6 +1,6 @@
 # IPM Explorer VS Code Extension README
 
-This is an [Visual Studio Code](https://code.visualstudio.com/) extension that enables users to query, display and install [Intersystems Package Manager](https://community.intersystems.com/tags/intersystems-package-manager-ipm) repositories. IPM is very similar to package managers like [nuget](www.nuget.org) or [npm](www.npmjs.org), just built and target at Intersystems products.
+This is an [Visual Studio Code](https://code.visualstudio.com/) extension that enables users to query, display and install [Intersystems Package Manager](https://community.intersystems.com/tags/intersystems-package-manager-ipm) repositories. IPM is very similar to package managers like [nuget](https://www.nuget.org) or [npm](https://www.npmjs.org), just built and target at Intersystems products.
 
 ## Installation
 
