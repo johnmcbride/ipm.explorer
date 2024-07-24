@@ -2,14 +2,19 @@
   "name": "ipm-explorer",
   "displayName": "ipm.explorer",
   "description": "A VSCode extension that displays packages from an Intersystems package manager",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.90.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnmcbride/ipm.explorer.git"
+  },
+  "publisher": "extensionsbyjohn",
   "categories": [
     "Other"
   ],
-  "icon": "images/packageipm.png",
+  "icon": "images/ipmexplorer.png",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
